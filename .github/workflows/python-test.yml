@@ -1,0 +1,16 @@
+name: Test setup-python
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Python version'
+        default: '3.14t'
+ 
+jobs:
+  test:
+    runs-on: windows-11-arm
+    steps:
+    - uses: actions/setup-python@v6.2.0
+      with:
+        python-version: ${{ inputs.version }}
