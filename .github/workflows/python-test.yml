@@ -11,12 +11,13 @@ jobs:
   test:
     runs-on: windows-latest
     steps:
-    - run: ls c:\hostedtoolcache\windows\Python\3.14.4
+    - run: c:\hostedtoolcache\windows\Python\3.14.4\python.exe -VV
+
+    - run: |
+        Start-Process -FilePath 'c:\hostedtoolcache\windows\Python\3.14.4\python-3.14.4-arm64.exe' -ArgumentList @('/uninstall', '/quiet') -Wait
 
     - uses: actions/setup-python@v6.2.0
       with:
         python-version: ${{ inputs.version }}
 
-    - run: ls c:\hostedtoolcache\windows\Python\3.14.4
-      if: always()
-    
+    - run: c:\hostedtoolcache\windows\Python\3.14.4\python.exe -VV
