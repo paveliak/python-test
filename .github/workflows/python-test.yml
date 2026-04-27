@@ -11,7 +11,7 @@ jobs:
   test:
     runs-on: windows-11-arm
     steps:
-    - run: ls c:\hostedtoolcache\windows\Python
+    - run: ls c:\hostedtoolcache\windows\Python\3.14.4
 
     - uses: actions/setup-python@v6.2.0
       with:
