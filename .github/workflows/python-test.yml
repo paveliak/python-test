@@ -15,7 +15,7 @@ jobs:
     - run: c:\hostedtoolcache\windows\Python\3.14.4\x64\python.exe -VV
 
     - run: |
-        Start-Process -FilePath 'c:\hostedtoolcache\windows\Python\3.14.4\python-3.14.4-amd64.exe' -ArgumentList @('/uninstall', '/quiet') -Wait
+        Start-Process -FilePath 'c:\hostedtoolcache\windows\Python\3.14.4\x64\python-3.14.4-amd64.exe' -ArgumentList @('/uninstall', '/quiet') -Wait
 
     - uses: actions/setup-python@v6.2.0
       with:
