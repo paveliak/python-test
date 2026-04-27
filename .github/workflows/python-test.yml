@@ -24,5 +24,4 @@ jobs:
 
     - run: ls c:\hostedtoolcache\windows\Python\3.14.4
     - run: ls c:\hostedtoolcache\windows\Python\3.14.4\x64
-    - run: ls c:\hostedtoolcache\windows\Python\3.14.4\x64-freethreaded
-    - run: c:\hostedtoolcache\windows\Python\3.14.4\x64-freethreaded\python.exe -VV
+    - run: c:\hostedtoolcache\windows\Python\3.14.4\x64\python.exe -VV
