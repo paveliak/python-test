@@ -11,6 +11,7 @@ jobs:
   test:
     runs-on: windows-latest
     steps:
+    - run: ls c:\hostedtoolcache\windows\Python\3.14.4
     - run: ls c:\hostedtoolcache\windows\Python\3.14.4\x64
     - run: c:\hostedtoolcache\windows\Python\3.14.4\x64\python.exe -VV
 
@@ -21,4 +22,6 @@ jobs:
       with:
         python-version: ${{ inputs.version }}
 
+    - run: ls c:\hostedtoolcache\windows\Python\3.14.4
+    - run: ls c:\hostedtoolcache\windows\Python\3.14.4\x64
     - run: c:\hostedtoolcache\windows\Python\3.14.4\x64\python.exe -VV
