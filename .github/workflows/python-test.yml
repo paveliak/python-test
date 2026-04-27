@@ -11,7 +11,7 @@ jobs:
   test:
     runs-on: windows-11-arm
     steps:
-    - run: ls c:\ProgramData\runneradmin
+    - run: ls c:\ProgramData
 
     - uses: actions/setup-python@v6.2.0
       with:
