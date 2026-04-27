@@ -11,6 +11,7 @@ jobs:
   test:
     runs-on: windows-latest
     steps:
+    - run: ls c:\hostedtoolcache\windows\Python\3.14.4
     - run: c:\hostedtoolcache\windows\Python\3.14.4\python.exe -VV
 
     - run: |
