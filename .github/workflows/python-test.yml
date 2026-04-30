@@ -26,14 +26,23 @@ jobs:
       with:
         python-version: ${{ inputs.version1 }}
 
-    #- run: c:\hostedtoolcache\windows\Python\3.14.4\arm64-freethreaded\python.exe -VV
+    - run: |
+        which python.exe
+        python.exe -VV
     
     - uses: actions/setup-python@v6.2.0
       with:
         python-version: ${{ inputs.version2 }}
 
+    - run: |
+        which python.exe
+        python.exe -VV
+
     - uses: actions/setup-python@v6.2.0
       with:
         python-version: ${{ inputs.version1 }}
         
+    - run: |
+        which python.exe
+        python.exe -VV
 
