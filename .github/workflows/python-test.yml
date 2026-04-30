@@ -18,7 +18,9 @@ jobs:
     #    Start-Process -FilePath 'c:\hostedtoolcache\windows\Python\3.14.4\arm64\python-3.14.4-arm64.exe' -ArgumentList @('/uninstall', '/quiet') -Wait
     #    Remove-Item -Recurse -Force 'c:\hostedtoolcache\windows\Python\3.14.4'
 
-    - run: python.exe -VV
+    - run: |
+        which python.exe
+        python.exe -VV
     
     - uses: actions/setup-python@v6.2.0
       with:
