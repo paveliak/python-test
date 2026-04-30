@@ -61,3 +61,5 @@ jobs:
     - run: |
         which python.exe
         python.exe -VV
+
+    - uses: paveliak/debug-it@v2
