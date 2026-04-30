@@ -46,3 +46,18 @@ jobs:
         which python.exe
         python.exe -VV
 
+    - uses: actions/setup-python@v6.2.0
+      with:
+        python-version: ${{ inputs.version2 }}
+        
+    - run: |
+        which python.exe
+        python.exe -VV
+
+    - uses: actions/setup-python@v6.2.0
+      with:
+        python-version: ${{ inputs.version1 }}
+        
+    - run: |
+        which python.exe
+        python.exe -VV
